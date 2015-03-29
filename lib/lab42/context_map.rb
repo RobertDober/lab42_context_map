@@ -1,5 +1,10 @@
+require 'forwarder'
+
 module Lab42
+
   class ContextMap
+    extend Forwarder
+    forward_all :fetch, to: :hash
 
     attr_reader :hash
 
