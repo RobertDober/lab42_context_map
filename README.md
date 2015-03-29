@@ -9,4 +9,7 @@
 
 A map impelementation with context, access goodies and representation format enhancements (json, yaml, xml,...)
 
+### Hash API
+
+A `Lab42::ContextMap` adheres to the `Hash` API implementing compatible implementations of `[], fetch, keys, size, ...` of an **immutable**  Hash
 

@@ -10,10 +10,7 @@ rvm:
 
 install: 
   - bundle install
-    # Assure order of files for qed
-  - touch demo/fordir/subdir/1
-  - chmod 444 demo/forfile/readable
 script: 
   - bundle exec rspec spec
-  - bundle exec qed demo
+  - bundle exec cucumber features
 
